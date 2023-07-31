@@ -1,22 +1,55 @@
-public class main {
+import java.util.Scanner;
+public class exerciseJava8 {
     public static void main(String[] args) {
 
-        String imputUtente = "5";
-        String numberList = imputUtente;
-        switch (numberList){
-            case "1" -> System.out.println("one");
-            case "2" -> System.out.println("two");
-            case "3" -> System.out.println("three");
-            case "4" -> System.out.println("four");
-            case "5" -> System.out.println("five");
-            case "6" -> System.out.println("six");
-            case "7" -> System.out.println("seven");
-            case "8" -> System.out.println("eight");
-            case "9" -> System.out.println("nine");
-            case "10" -> System.out.println("ten");
-            default -> System.out.println("Cannot give you the name");
+        Scanner consoleInput = new Scanner(System.in);
 
+        while(true){
+            int num = consoleInput.nextInt();
+            switch (num) {
+                case 1:
+                    System.out.println("One");
+                break;
 
+                case 2:
+                    System.out.println("Two");
+                break;
+
+                case 3:
+                    System.out.println("Three");
+                break;
+
+                case 4:
+                    System.out.println("Four");
+                break;
+
+                case 5:
+                    System.out.println("Five");
+                break;
+
+                case 6:
+                    System.out.println("Six");
+                break;
+
+                case 7:
+                    System.out.println("Seven");
+                break;
+
+                case 8:
+                    System.out.println("eight");
+                break;
+
+                case 9:
+                    System.out.println("Nine");
+                break;
+
+                case 10:
+                    System.out.println("Ten");
+                break;
+
+                default:
+                    System.out.println("Cannot give you the name");
+            }
+        }
         }
     }
-}
